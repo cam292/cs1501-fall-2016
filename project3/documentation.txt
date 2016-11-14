@@ -1,0 +1,23 @@
+Craig Mazzotta
+cs1501 fall 2016
+Project 3
+
+My implementation of priority queues for this project resulted in two separate PQ structures.
+One indexed max pq to organize apartments by square footage and an indexed min pq to organize
+apartments by price. The implementations are almost identical, except for how the items are
+prioritized (i.e. max pq has largest values at lowest index).
+
+In order to maintain constant runtime for finding, the pq's use 3 arrays: pq[], qp[], and apts[]. PQ associates an
+index i with and identifier N. QP is the inverse of PQ, where the indices  in QP refer to N in PQ and the values in
+QP correspond to the index i that N can be found in PQ. APTS, then, is the actual priority queue storing the APT
+objects. Lookup times for arrays are constant, so to finding a desired index or APT object is just an array lookup.
+For a priority queue of N items, memory required is O(N) (ignoring the 3x constant).
+
+Looking up an object in a specific city results in runtime that is logarithmic. This is because it iterates through
+each level, looking for an object with the specified city. Once an object is found, the program continues to iterate
+the rest of the level looking for another object with the specified city. If found, it must compare the two based on price or
+square footage to decide which one is of higher priority. In the worst case, the program must traverse to the bottom
+level to the last leaf. So, runtime is bound by the height of the tree (log N) and the number of items in that level (2^log N).
+
+Runtimes for insert, remove, or update maintain logarithmic runtimes. Since lookup of the object is constant,
+the runtime is based on how far the object is pushed up or down the PQ.

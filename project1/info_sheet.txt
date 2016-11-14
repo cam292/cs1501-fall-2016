@@ -1,0 +1,59 @@
+========================================
+CS/COE 1501 Assignment Information Sheet
+----------------------------------------
+
+You must submit an information sheet with every assignment.  Also be sure
+to submit all materials following the procedures described on the
+submission procedures page.
+
+Name:  Craig Mazzotta
+
+Lecture section:  M/W 4:30-5:45
+
+Recitation day and time:  Friday 3pm
+
+Assignment #:  Project 1
+
+Program due date:  September 30, 2016 11:59 pm
+
+Handed in date: 9/30/16
+
+Source code file name(s):
+
+pw_check.java
+
+
+
+
+Other file name(s) (if relevant):
+
+dictionary.txt
+all_passwords.txt (generated from pw_check.java)
+
+dataStructures/RWay.java (symbol table for generated passwords)
+dataStructures/DLB.java (symbol table for dictionary)
+dataStructures/Alphabet.java
+dataStructures/Queue.java
+
+
+
+Does your program run without error?:
+
+when running "-find":
+  -genPasswords() causes a memory error to occur:
+    "Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded"
+  -createDictionary() correctly populates a DLB with words
+  -validating passwords/dictionary lookups are working correctly
+
+when running "-check":
+  -validating user enter password works correctly
+  -returns time to crack a valid password works correctly
+  -return 10 passwords sharing a prefix works correctly
+
+If not, what is/are the error(s) and which parts of your program run
+correctly?:
+
+
+
+
+Additional comments to the grader:

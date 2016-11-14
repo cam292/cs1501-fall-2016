@@ -1,0 +1,1 @@
+The symbol table I implemented to store password/time pairs is an RWay trie. I chose an RWay trie because of how dense each level of the tree will be. The RWay's next node contains references to each of the 42 valid characters available to generate a password. There will be many passwords sharing the same prefixes, so an RWay trie was ideal for the situation.
