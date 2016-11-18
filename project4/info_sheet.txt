@@ -1,0 +1,51 @@
+========================================
+CS/COE 1501 Assignment Information Sheet
+----------------------------------------
+
+You must submit an information sheet with every assignment.  Also be sure
+to submit all materials following the procedures described on the
+submission procedures page.
+
+Name: Craig Mazzotta
+
+Lecture section:  M/W 430-545
+
+Recitation day and time:  Fri. 3pm
+
+Assignment #:  4
+
+Program due date:  11/18/16
+
+Handed in date:  11/18/16
+
+Source code file name(s):
+
+Driver:
+  Airline.java
+Graph:
+  Edge.java
+  EdgeWeightedGraph.java
+MST:
+  KruskalMST.java
+  UF.java
+  Queue.java
+  MinPQ.java
+Shortest Path:
+  DijkstraSP.java
+  IndexMinPQ.java
+  Stack.java
+
+
+Other file name(s) (if relevant):
+
+
+Does your program run without error?: Yes.
+
+If not, what is/are the error(s) and which parts of your program run
+correctly?:
+
+Additional comments to the grader:
+
+Compiling once will result in an error in MinPQ.java on line 191, saying it cannot find symbol compareTo(Key). Compiling a second time, immediately after, results in no error and the program runs without error.
+
+Assumptions were made, as stated by the description, that the city names entered by the user are already in the graph. Therefore, the user entered city must be in the graph or the query won't work. As goes for user entered distances/prices, they are not type checked. Distance should be an int and price should be a double.
